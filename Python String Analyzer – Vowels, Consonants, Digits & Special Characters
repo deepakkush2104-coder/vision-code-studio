@@ -1,0 +1,20 @@
+# vision-code-studio
+text=input("Enter your string: ")
+v_count=0
+c_count=0
+d_count=0
+s_count=0
+for ch in text:
+    if ch in "aeiouAEIOU":
+        v_count = v_count + 1
+    elif "a" <= ch <= "z" or "A" <= ch <= "Z":
+        c_count = c_count + 1
+    elif "0" <= ch <= "9":
+        d_count = d_count + 1
+    else:
+        s_count = s_count + 1
+print("Vowels =", v_count)
+print("Consonants =", c_count)
+print("Digits =", d_count)
+print("Special characters =", s_count)
+print("Reversed =", text[::-1])
